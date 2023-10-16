@@ -1,0 +1,95 @@
+
+<!-- index.html -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <!-- Link to an external CSS stylesheet -->
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Survey Form</h1>
+        <form id="survey-form" >
+            <!-- First Name and Last Name input fields with labels -->
+            <div style="display: flex; gap: 20px;">
+                <div>
+                    <label for="first-name">First Name*</label>
+                    <input type="text" id="first-name" required>
+                </div>
+                <div>
+                    <label for="last-name">Last Name*</label>
+                    <input type="text" id="last-name" required>
+                </div>
+            </div>
+            <!-- Date of Birth input field with label -->
+            <div style="display: flex; gap: 20px;">
+                <label for="date-of-birth">Date of Birth*</label>
+                <input type="date" id="date-of-birth" required>
+            </div>
+            <!-- Email and Mobile Number input fields with labels -->
+            <div style="display: flex; gap: 20px;">
+                <div>
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="mobile-number">Mobile Number*</label>
+                    <input type="tel" id="mobile-number" required>
+                </div>
+            </div>
+            <!-- Profession input field with label -->
+            <div>
+                <label for="profession">Profession*</label>
+                <input type="text" id="profession" required>
+            </div>
+            <!-- Country select dropdown with label -->
+            <div style="display: flex; gap: 20px;">
+                <label for="country">Country*</label>
+                <select id="country" required>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                    <option value="India">India</option>
+                    <option value="South Africa">South Africa</option>
+                </select>
+            </div>
+            <!-- Gender checkboxes with label -->
+            <div style="display: flex;">
+                <label for="gender">Gender*</label>
+                <input type="checkbox" id="gender-male" name="gender" value="Male" class="gender"> Male
+                <input type="checkbox" id="gender-female" name="gender" value="Female" class="gender"> Female
+                <input type="checkbox" id="gender-other" name="gender" value="Other" class="gender"> Other
+            </div>
+            <!-- Error message for empty fields -->
+            <div id="error-message" style="display: none; color: red;">All fields are required.</div>
+            <!-- Button for submitting the form -->
+            <button type="button" id="submit-button">Submit</button>
+            <!-- Button for resetting the form -->
+            <button type="button" id="reset-button">Reset</button>
+        </form>
+    </div>
+    <!-- Popup for displaying survey details -->
+    <div id="popup">
+        <div id="popup-content">
+            <h2 class="header">Survey Details</h2>
+            <!-- Elements to display user information in the popup -->
+            <p>First Name: <span id="popup-first-name"></span></p>
+            <p>Last Name: <span id="popup-last-name"></span></p>
+            <p>Date of Birth: <span id="popup-date-of-birth"></span></p>
+            <p>Country: <span id="popup-country"></span></p>
+            <p>Gender: <span id="popup-gender"></span></p>
+            <p>Profession: <span id="popup-profession"></span></p>
+            <p>Email: <span id="popup-email"></span></p>
+            <p>Mobile Number: <span id="popup-mobile-number"></span></p>
+            <!-- Button to close the popup -->
+            <button id="popup-close" class="close">Close</button>
+        </div>
+    </div>
+    <!-- Link to an external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+
