@@ -1,7 +1,7 @@
-#Survey Form Web Application
+# Survey Form Web Application
 This web application is a simple survey form that allows users to input their personal information and then displays a summary of the entered details in a popup. It is built using HTML, CSS, and JavaScript. The application ensures that all required fields are filled out before displaying the survey details.
 
-##Table of Contents
+## Table of Contents
 Features
 Getting Started
 Usage
@@ -24,7 +24,7 @@ Popup Display: Upon successful submission, a popup is displayed with a summary o
 
 Popup Close and Reset: Users can close the popup and reset the form using the respective buttons.
 
-#Getting Started
+# Getting Started
 To use this web application, follow these steps:
 
 #Clone the Repository: Clone this repository to your local machine using your preferred method (e.g., git clone).
@@ -37,17 +37,17 @@ Submit the Form: Click the "Submit" button to view the survey details in a popup
 
 Close Popup and Reset: You can close the popup by clicking the "Close" button, and you can reset the form using the "Reset" button.
 
-#Usage
+# Usage
 This web application can be used for various purposes where you need to collect user information through a form and provide a convenient way to review the entered details. Some potential use cases include:
 
-#Customer feedback surveys
+# Customer feedback surveys
 Event registration forms
 User profile creation
 Customize the form fields, labels, and styles in the index.html and styles.css files to suit your specific needs.
 
-#Contributing
+# Contributing
 If you'd like to contribute to this project, feel free to submit a pull request with your proposed changes. We welcome contributions to enhance the functionality or improve the user interface.
-#License
+# License
 This project is licensed under the MIT License. You can find the license details in the LICENSE file in the project repository.
 
 Thank you for using the Survey Form Web Application!
